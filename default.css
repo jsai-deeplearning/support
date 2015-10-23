@@ -4,10 +4,7 @@ div#header {
 }
 
 div#title {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 5% 20px 5%;
     clear: both;
 }
 
@@ -18,6 +15,17 @@ div#title dl dt {
 
 div#title dl dt:after{
     content: "：";
+}
+
+div#social {
+    padding: 5px 5% 5px 5%;
+    margin: 20px 0px 20px 0px;
+    clear: both;
+}
+
+div#main p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 div#main h2 {
@@ -45,18 +53,9 @@ div#main h4 {
     clear: both;
 }
 
-p {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 div#aboutdiv img {
     width: 240px;
     height: 350px;
     float: right;
     padding: 5px 5% 5px 10px;
-}
-
-div#aboutdiv h2 {
-    margin-top: 0px;
 }
