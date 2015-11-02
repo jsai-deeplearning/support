@@ -23,6 +23,11 @@ div#social {
     clear: both;
 }
 
+/* fix the vertical position of a Facebook Like buttion */
+div#social .fb_iframe_widget > span {
+    vertical-align: baseline !important;
+}
+
 div#main p {
     padding-left: 20px;
     padding-right: 20px;
