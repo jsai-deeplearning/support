@@ -7,7 +7,7 @@
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {displayMath: [ ['\\[','\\]'] ]},
-  TeX: {extensions: ["autobold.js"]}
+  TeX: {extensions: ["AMSsymbols.js", "autobold.js"]}
 });
 </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -75,7 +75,21 @@ MathJax.Hub.Config({
 </ul>
 <h2>正誤表</h2>
 <h3>第2刷 (2015/11/30)</h3>
-<p>この刷では誤りは見つかっていません．</p>
+<ul>
+<li>P.47：第1式の右辺 \(-\Phi(\mathbf{V},\mathbf{H};\theta)\) → \(-\Phi(\mathbf{v},\mathbf{h};\theta)\)</li>
+<li>P.50，L.2：「…観測データ点に依存する．隠れ変数…」→「…観測データ点に依存する，隠れ変数…」（読点を句点に）</li>
+<li>P.55：第1式の次行の先頭に挿入「ここで，\(\mathbf{s}^{(r)} = \{s_i^{(r)} \mid i \in \Omega\}\)としている．」</li>
+<li>P.57：アルゴリズム2.3のタイトル「平均場近似」→「平均場近似の逐次代入法による解法」</li>
+<li>P.57，L.6：「 \(\mathrm{E}_{p(\mathbf{X}|\theta)}[\mathbf{X}_i]\) 」→「 \(\mathrm{E}_{p(\mathbf{X}|\theta)}[X_i]\) 」</li>
+<li>P.57，L.8：「期待値の咳」の後に挿入「 \(\mathrm{E}_{p(\mathbf{X}|\theta)}[X_iX_j]\approx m_i m_j\) 」</li>
+<li>P.58，式(2.39)：左辺「 \(\Phi(\mathbf{v},\mathbf{h};\boldsymbol{\theta})\) 」</li>
+<li>P.58，式(2.39)：左辺「 \(\Phi(\mathbf{V}=\mathbf{v},\mathbf{H}=\mathbf{h};\boldsymbol{\theta})\) 」</li>
+<li>P.69，L.2：「…る．」の後に次の文を挿入「 \(\tilde{\mathbf{v}}^{(0,m)}=\{v_i^{(0,m)} \mid i \in \mathcal{V}\}\) は可視層 \(\mathcal{V}\) からのサンプル点であり，\(\tilde{\mathbf{h}}^{(r)(0,m)}=\{h_j^{(r)(0,m)} \mid j \in \mathcal{H}^{(r)}\}\) は第 \(r\) 層目の隠れ層からのサンプル点である． 」</li>
+<li>P.69，式(2.58)：左辺「 \(\mathrm{E}_{p(\mathbf{V},\mathbf{H}|\boldsymbol{\theta})}[X_i,X_j]\) 」→「 \(\mathrm{E}_{p(\mathbf{V},\mathbf{H}|\boldsymbol{\theta})}[X_iX_j]\) 」（引数の区切りの「,」を削除）</li>
+<li>P.69，式(2.58)：右辺のベクトルの \(\mathbf{v}\) や \(\mathbf{v}\) をスカラーに変更</li>
+<li>P.76，式(2.66)の前行：規格化条件を変更「 \(\sum_{\mathbf{h}^{(1)}}q(\mathbf{h}^{(1)}\mid\mathbf{v}^{(\mu)})=1\) 」</li>
+<li>P.77，式(2.68)の次行：条件付き確率を「 \(q(\mathbf{H}^{(1)}\mid\mathbf{V})\) 」に変更</li>
+</ul>
 <h3>第1刷 (2015/10/31)</h3>
 <p>この刷では誤りは見つかっていません．</p>
 </div>
