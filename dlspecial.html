@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<meta http-equiv="content-language" content="ja" /> 
+<link rel="stylesheet" href="default.css" type="text/css" />
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {displayMath: [ ['\\[','\\]'] ]},
+  TeX: {extensions: ["AMSsymbols.js", "autobold.js"]}
+});
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- Twitter buttion -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- Google plus buttion -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<title>人工知能学会誌 連載解説「Deep Learning（深層学習）」</title>
+</head>
+<body>
+<!-- Facebook buttion -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<h1>人工知能学会誌 連載解説「Deep Learning（深層学習）」</h1>
+
+<h2>人工知能学会監修『深層学習 — Deep Learning』出版の案内</h2>
+
+<iframe align="right" src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&nou=1&bg1=FFFFFF&fc1=003300&lc1=003377&t=aigakkaorjp-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=tf_til&asins=476490487X" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe align="right" src="http://rcm-fe.amazon-adsystem.com/e/cm?t=aigakkaorjp-22&o=9&p=8&l=as1&asins=B01B768QJW&nou=1&ref=tf_til&fc1=003300&IS2=1&lt1=_blank&m=amazon&lc1=003377&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+<p>本連載解説の記事を加筆・再編集した書籍『深層学習 — Deep Learning』を近代科学社から2015年10月31日に出版しました．</p>
+<ul>
+    <li>監修：人工知能学会</li>
+    <li>著者：麻生 英樹，安田 宗樹，前田 新一，岡野原 大輔，岡谷 貴之，久保 陽太郎，ボレガラ・ダヌシカ</li>
+    <li>編集：神嶌 敏弘</li>
+    <li>出版：近代科学社</li>
+</ul>
+<ul>
+<li><a href="http://www.kamishima.net/2013/05/edit-tutorial-deeplearning/">出版社のページ</a></li>
+<li><a href="http://jsai-deeplearning.github.io/support/">サポートページ</a></li>
+</ul>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<h2  style="clear:both;">人工知能学会誌 連載解説「Deep Learning（深層学習）」</h2>
+
+<p>追記：当初は全6回の予定でしたが，新たに2014年7月号に，コントラスティブ・ダイバージェンスについて<a href="http://researchmap.jp/ichi/">前田 新一</a>先生に執筆いただけることになりました．</p>
+
+<ul>
+    <li><a href="http://www.ai-gakkai.or.jp/vol28_no3/">人工知能学会誌 Vol.28 No.3 (2013年5月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol28_no4/">人工知能学会誌 Vol.28 No.4 (2013年7月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol28_no5/">人工知能学会誌 Vol.28 No.5 (2013年9月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol28_no6/">人工知能学会誌 Vol.28 No.6 (2013年11月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol29_no1/">人工知能学会誌 Vol.29 No.1 (2014年1月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol29_no2/">人工知能学会誌 Vol.29 No.2 (2014年3月) 目次</a></li>
+    <li><a href="http://www.ai-gakkai.or.jp/vol29_no4/">人工知能学会誌 Vol.29 No.4 (2014年7月) 目次</a></li>
+</ul>
+
+<p>以下に，本連載解説の前書きを掲載しておきます．</p>
+
+<h2>連載解説「Deep Learning(深層学習)」にあたって</h2>
+
+<em>Deep Learning</em> をみなさんは知っているだろうか？
+
+<p>2012年は，機械学習分野にとって，まさしくdeep learningの年であったといえよう．<a href="http://hunch.net/?p=2609">Langfordの機械学習関連のブログ</a>などで，2012年の顕著な成果として取り上げられるのは当然として，一般紙である <a href="http://nyti.ms/SgcVec">New York Times にまで記事</a>が掲載された．新しい機械学習手法がこれほど話題になったことは，サポート・ベクトル・マシンやノンパラメトリック・ベイズなど最近のどの手法でもなかったことである．</p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>なぜこれほど話題になったのだろうか．<a href="http://research.microsoft.com/en-us/news/features/speechrecognition-082911.aspx">2011年に音声認識の分野で注目され始めてはいた</a>のだが，2012年になってから，いろいろな分析・予測・認識処理のコンペティションで連戦連勝しているからである．しかも2位以下を置き去りにした圧勝である．</p>
+
+<p>例えば，この <a href="http://www.image-net.org/challenges/LSVRC/2012/results.html">Large Scale Visual Recognition Challenge 2012</a> は画像の分類問題を対象としたコンペティションである．結果を見ていただくと，2位以下の予測誤差は10<sup>-2</sup>のオーダーの差だが，1位のHintonらのグループSuperVisionは2位と約10<sup>-1</sup>の差を付けている．この強さは，言葉どおりケタ違いである．</p>
+
+<p>その他のコンペティションでの様子も，<a href="http://www.kurzweilai.net/how-bio-inspired-deep-learning-keeps-winning-competitions">Kurzweilのブログ</a>で取り上げられているように圧倒的である．このような大きな差が付くことは非常に希であり，このdeep learningは数十年に一度のブレイクスルーと言ってよいだろう．そこで，遅ればせながら，このdeep learningについて連載解説を企画した．</p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>deep learnngは新しい機械学習手法であると述べたが，これは正しくもあり，誤りでもある．なぜなら，deep learningの手法は人工知能研究の初期からあるニューラルネットの一つであるからである．</p>
+
+<p>ここで少しニューラルネットの歴史に触れておこう．1940年代に，シナプスに信号が入力されると，その信号に応じて新たな信号の発火が起こり，それが次のシナプスに伝播するという，人間の脳の神経ネットワークのモデルとして，McCulloch-Pittsモデルが提案された．このモデルは1950年代には，Rosenblattをはじめとする研究者によりパーセプトロンなどが開発され，計算機上でシュミレートされるようになった．</p>
+
+<p>しかし，1969年にMinskyとPapertによりパーセプトロンの限界が示され，その研究は下火になった．この限界は，1980年代にはRumelhartらの効率的な多層ニューラルネットの開発により解消され，本格的に非線形の識別問題が扱えるようになり，その研究と実問題への応用は発展を遂げた．だが，大域的な最適解は計算できないという問題は残っており，この弱点を解消したサポートベクトルマシンが1990年代に登場したことにより，ニューラルネットは機械学習世界の主役の座を譲ることとなった．</p>
+
+<p>再び冬の時代を迎えたニューラルネット研究ではあるが，HintonやBengioらは研究を根気強く続け，新たな手法を発表し続けた．特に，並列計算技術と共に用いることで，超多層ニューラルネットの学習を可能にした，2000年代中期のcontrastive divergenceとpre-trainingは重要な技術である．そして，現在，冒頭で述べたような画期的な成果を示し，ニューラルネットは二度目の復活を成し遂げた．</p>
+
+<p>不遇の時代にも忍耐強く改良を続け，現在の成功に繋げたニューラルネット研究者の高い見識や不断の努力と，時流に流されず優れた研究結果を見逃さなかった査読者の先見の明に対してはただ畏敬の念を抱くのみである．</p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>本連載解説では，deep learningの訳語として『<em>深層学習</em>』を用いる．その理由は，“deep”には技術的な側面と内容的な側面の二つの意味が込められていると考えるからである．</p>
+
+<p>技術的な側面からみると，深層学習のニューラルネットは，非常に多くの層で構成されている，すなわち『深い層構造』を持っている．一方で，内容的な側面からみると，深層学習は，表面的な識別関数を獲得するのではなく，より多様な入力の組み合わせによる複雑な意味表現，すなわち『深層にある表現』を獲得することを目的としている．</p>
+
+<p>なお，Bengioは深層学習の本質を表現学習 (representation learning) であるとし，今年，2013年4月に第1回を開催した深層学習関連の国際会議の名称も<a href="http://www.iclr.cc/">International Conference on Learning Representation</a>としている．<p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>連載解説『Deep Learning（深層学習）』は全6回の予定である．第1回と第2回は深層学習のモデルと学習手法の基本で，今号（2013年5月号）では，<a href="http://www.adv-pip.yz.yamagata-u.ac.jp/~muneki/">安田宗樹</a>がボルツマンマシン型のモデルを，次号（2013年7月号）では， <a href="http://staff.aist.go.jp/h.asoh/">麻生英樹</a>がフィード・フォーワード型のモデルを中心に，その歴史的な発展などもふまえて解説する．2013年9月号掲載の第3回は，<a href="https://sites.google.com/site/daisukeokanohara/">岡野原大輔</a>が実装面について解説する．モデルと共に，データの規模も，深層学習の重要な要素であるため，並列計算技術も必要となる．後半3回（2013年11月号〜2014年3月号）は，各応用分野において深層学習をどのように適用するかを扱う．第4回は<a href="http://www.fractal.is.tohoku.ac.jp/">岡谷貴之</a>が画像認識分野について，第5回は<a href="http://yota.ro">久保陽太郎</a>が音声認識分野について，そして第6回は<a href="http://cgi.csc.liv.ac.uk/~danushka/index_ja.html">ボレガラ・ダヌシカ</a>が自然言語処理分野についてそれぞれ解説する．</p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>深層学習についていくつか関連資料を挙げておこう．最も著名なサイトは <a href="http://deeplearning.net/">deeplearing.net</a> であり，各種の資料，ソフトウェア，その他の関連情報などを網羅している．2012年は深層学習のチュートリアルがさまざまな国際会議で開催された．深層学習の中心研究者であるBengioは機械学習の国際会議ICMLで，Hintonはサマースクールにてチュートリアル資料を公開しており，これらを最初に参照すると良いであろう．深層学習の応用についても，画像認識の国際会議CVPR，自然言語処理の国際会議ACL，そして音声認識のICASSPなどでもチュートリアル講演が行われた．<p>
+
+<hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
+
+<p>冒頭に述べたような圧倒的な性能を示した深層学習ではあるが，課題は山積している．</p>
+
+<p>まず，理論面的に解明されていない部分が数多くある．pre-trainingを採用したことによる誤差はどれくらいか？他にも効率のよい学習法はあるのか？pre-trainingが特徴の学習であるとするならば，既存の非線形次元削減や特徴生成とは何が違ったのか？その違いの本質が解明されれ，大規模データとそれにみあう複雑度のモデルが扱うことが可能であるならば，ニューラルネット以外でも深層学習と同等のモデルが獲得できるのか？</p>
+
+<p>一方で，実用面でも，現状では調整すべきパラメータが多く性能を発揮するには忍耐強い調整を必要とするともいわれている．複雑なモデルの獲得には，大規模データを処理できることが必須となるが，並列計算手法の改良はまだまだ必要であろう．</p>
+
+<p>これらの問題に対し，多くの研究者が取り組み始めており，向こう数年から数十年にわたって，画期的な成果が次々とこの分野では発表されるであろう．以上，現在の機械学習とその関連分野で最もホットな話題であるdeep learning（深層学習）について，本連載解説を楽しんでいただきたい．</p>
+</div>
+</body>
+</html>
