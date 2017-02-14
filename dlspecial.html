@@ -11,27 +11,16 @@ MathJax.Hub.Config({
 });
 </script>
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<!-- Twitter buttion -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<!-- Google plus buttion -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
 <title>人工知能学会誌 連載解説「Deep Learning（深層学習）」</title>
 </head>
 <body>
-<!-- Facebook buttion -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div id="wrapper">
 <h1>人工知能学会誌 連載解説「Deep Learning（深層学習）」</h1>
 
+<div id="main">
 <h2>人工知能学会監修『深層学習 — Deep Learning』出版の案内</h2>
 
+<img src="dlbook.png" />
 <p>本連載解説の記事を加筆・再編集した書籍『深層学習 — Deep Learning』を近代科学社から2015年10月31日に出版しました．</p>
 <ul>
     <li>監修：人工知能学会</li>
@@ -40,7 +29,7 @@ MathJax.Hub.Config({
     <li>出版：近代科学社</li>
 </ul>
 <ul>
-<li><a href="http://www.kamishima.net/2013/05/edit-tutorial-deeplearning/">出版社のページ</a></li>
+<li><a href="http://www.kindaikagaku.co.jp/information/kd0487.htm">出版社のページ</a></li>
 <li><a href="http://jsai-deeplearning.github.io/support/">サポートページ</a></li>
 </ul>
 
@@ -94,7 +83,7 @@ MathJax.Hub.Config({
 
 <p>技術的な側面からみると，深層学習のニューラルネットは，非常に多くの層で構成されている，すなわち『深い層構造』を持っている．一方で，内容的な側面からみると，深層学習は，表面的な識別関数を獲得するのではなく，より多様な入力の組み合わせによる複雑な意味表現，すなわち『深層にある表現』を獲得することを目的としている．</p>
 
-<p>なお，Bengioは深層学習の本質を表現学習 (representation learning) であるとし，今年，2013年4月に第1回を開催した深層学習関連の国際会議の名称も<a href="http://www.iclr.cc/">International Conference on Learning Representation</a>としている．<p>
+<p>なお，Bengioは深層学習の本質を表現学習 (representation learning) であるとし，今年，2013年4月に第1回を開催した深層学習関連の国際会議の名称も<a href="http://www.iclr.cc/">International Conference on Learning Representation</a>としている．</p>
 
 <hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
 
@@ -102,7 +91,7 @@ MathJax.Hub.Config({
 
 <hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
 
-<p>深層学習についていくつか関連資料を挙げておこう．最も著名なサイトは <a href="http://deeplearning.net/">deeplearing.net</a> であり，各種の資料，ソフトウェア，その他の関連情報などを網羅している．2012年は深層学習のチュートリアルがさまざまな国際会議で開催された．深層学習の中心研究者であるBengioは機械学習の国際会議ICMLで，Hintonはサマースクールにてチュートリアル資料を公開しており，これらを最初に参照すると良いであろう．深層学習の応用についても，画像認識の国際会議CVPR，自然言語処理の国際会議ACL，そして音声認識のICASSPなどでもチュートリアル講演が行われた．<p>
+<p>深層学習についていくつか関連資料を挙げておこう．最も著名なサイトは <a href="http://deeplearning.net/">deeplearing.net</a> であり，各種の資料，ソフトウェア，その他の関連情報などを網羅している．2012年は深層学習のチュートリアルがさまざまな国際会議で開催された．深層学習の中心研究者であるBengioは機械学習の国際会議ICMLで，Hintonはサマースクールにてチュートリアル資料を公開しており，これらを最初に参照すると良いであろう．深層学習の応用についても，画像認識の国際会議CVPR，自然言語処理の国際会議ACL，そして音声認識のICASSPなどでもチュートリアル講演が行われた．</p>
 
 <hr style="border: 0; width: 40%; clear: both; height: 6px; margin-bottom: 3ex; margin-top: 3ex;" />
 
@@ -113,6 +102,7 @@ MathJax.Hub.Config({
 <p>一方で，実用面でも，現状では調整すべきパラメータが多く性能を発揮するには忍耐強い調整を必要とするともいわれている．複雑なモデルの獲得には，大規模データを処理できることが必須となるが，並列計算手法の改良はまだまだ必要であろう．</p>
 
 <p>これらの問題に対し，多くの研究者が取り組み始めており，向こう数年から数十年にわたって，画期的な成果が次々とこの分野では発表されるであろう．以上，現在の機械学習とその関連分野で最もホットな話題であるdeep learning（深層学習）について，本連載解説を楽しんでいただきたい．</p>
+</div>
 </div>
 </body>
 </html>
